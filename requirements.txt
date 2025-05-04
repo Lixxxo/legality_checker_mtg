@@ -1,4 +1,25 @@
-fastapi==0.88.0
-requests
-pillow
-prettytable
+# Core dependencies
+aiohttp==3.9.3  # Async HTTP client for Python
+#Pillow==10.2.0  # Python Imaging Library (fork)
+prettytable==3.10.0  # Simple ASCII table generation
+requests==2.31.0  # HTTP for Humans
+
+# Development/testing (optional)
+pytest==8.1.1  # Testing framework
+pytest-asyncio==0.23.6  # Async test support
+mypy==1.9.0  # Static type checking
+types-requests==2.31.0.20240311  # Type stubs for requests
+types-Pillow==10.2.0.20240311  # Type stubs for Pillow
+
+# Python 3.13 specific notes:
+# - aiohttp 3.9+ has full Python 3.13 support
+# - Pillow 10.x is compatible with Python 3.13
+# - requests 2.31+ supports Python 3.13
+# - prettytable 3.10+ works with Python 3.13
+
+# Installation command:
+# python -m pip install -r requirements.txt
+
+# Uninstallation command:
+# FOR /F "delims=~" %p IN ('pip freeze') DO pip uninstall -y %p 
+#
